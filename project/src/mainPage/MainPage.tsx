@@ -6,7 +6,7 @@ export default function MainPage() {
     <>
       <section>
         <div className="relative">
-          <div className="absolute top-8 md:inset-8 sm:inset-x-0 z-10 ">
+          <div className="absolute inset-0 lg:top-20 md:inset-0 top-20 sm:inset-0 top-20  ">
             <h1 className="text-center text-amber-200 text-6xl">Inês e José</h1>
           </div>
           <div>
