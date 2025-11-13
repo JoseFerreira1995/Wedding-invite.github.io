@@ -1,28 +1,29 @@
-import { ArrowUpIcon, BirdIcon } from "lucide-react";
+import { BirdIcon, ArrowUpIcon } from "lucide-react";
 import "./App.css";
 import { Button } from "./components/ui/button";
 
-function App() {
-  const alertMessage = () => {
-    return alert("Not Finished");
-  };
+import MainPage from "./mainPage/MainPage";
+import { useState } from "react";
 
+function App() {
+  const [isClicked, setIsClicked] = useState(true);
+
+  const handleClick = () => {
+    return setIsClicked(false);
+  };
   return (
     <>
-      <div className=" flex flex-col items-center space-y-10 m-[50%] lg:m-[20%]">
-        <BirdIcon
-          className="animate-bounce size-20"
-          onClick={alertMessage}
-        ></BirdIcon>
-        <ArrowUpIcon></ArrowUpIcon>
-        <Button
-          className=" hover:bg-blue-500"
-          variant={"outline"}
-          onClick={alertMessage}
-        >
-          Clica Aqui
-        </Button>
-      </div>
+      {isClicked ? (
+        <div className=" flex flex-col items-center space-y-10 m-[50%] lg:m-[20%] hover:cursor-pointer">
+          <BirdIcon
+            className="animate-bounce size-20 hover:cursor-pointer"
+            onClick={handleClick}
+          ></BirdIcon>
+          <ArrowUpIcon></ArrowUpIcon>
+        </div>
+      ) : (
+        <MainPage></MainPage>
+      )}
     </>
   );
 }
