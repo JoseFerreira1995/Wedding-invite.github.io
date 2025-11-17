@@ -1,9 +1,12 @@
 import Card from "@/components/Card";
 import image from "../assets/4W8A8945.jpg";
 import bgImage from "../assets/4W8A9242.jpg";
+import logo from "../assets/logo.png";
 import { Calendar1Icon, MapPlusIcon, MessageCircleIcon } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export default function MainPage() {
+  const navigate = useNavigate();
   const calendar =
     "https://calendar.google.com/calendar/u/0/r/day/2026/7/11?tab=mc&date=20081101";
   const mapAddress = "https://maps.app.goo.gl/uyJFurUmVWxohYU67";
@@ -65,6 +68,15 @@ export default function MainPage() {
           </div>
         </div>
       </section>
+      <footer>
+        <div className="p-10 flex items-center flex-col">
+          <img
+            className="size-15"
+            src={logo}
+            onClick={() => navigate("/")}
+          ></img>
+        </div>
+      </footer>
     </>
   );
 }

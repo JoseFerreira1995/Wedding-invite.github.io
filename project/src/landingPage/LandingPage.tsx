@@ -1,26 +1,21 @@
-import MainPage from "@/mainPage/MainPage";
-import { ArrowUpIcon, BirdIcon } from "lucide-react";
-import { useState } from "react";
-
+import { ArrowUpIcon } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import loveBird from "../assets/bird_mail_icon.svg";
 export default function LandingPage() {
-  const [isClicked, setIsClicked] = useState<boolean>(true);
+  const navigate = useNavigate();
 
-  const handleClick = (): void => {
-    return setIsClicked(false);
-  };
   return (
     <>
-      {isClicked ? (
-        <div className=" flex flex-col items-center space-y-10 m-[50%] lg:m-[20%] hover:cursor-pointer">
-          <BirdIcon
-            className="animate-bounce size-20 hover:cursor-pointer"
-            onClick={handleClick}
-          ></BirdIcon>
-          <ArrowUpIcon></ArrowUpIcon>
-        </div>
-      ) : (
-        <MainPage></MainPage>
-      )}
+      <div className=" flex flex-col items-center space-y-10 m-[20%] p-[5%] hover:cursor-pointer">
+        <img
+          className="animate-bounce"
+          src={loveBird}
+          onClick={() => {
+            navigate("/main");
+          }}
+        ></img>
+        <ArrowUpIcon></ArrowUpIcon>
+      </div>
     </>
   );
 }
