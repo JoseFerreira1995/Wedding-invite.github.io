@@ -6,7 +6,7 @@ interface PropTypes {
 
 export default function Card(props: PropTypes) {
   return (
-    <div >
+    <div className="text-center space-y-5 m-2 p-1 font-oswald" >
       <h1>{props.title}</h1>
       <h2> {props.description}</h2>
     </div>
