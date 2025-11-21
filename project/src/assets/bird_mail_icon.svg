@@ -1,0 +1,88 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(100, 100)">
+    <!-- Corpo do pássaro -->
+    <ellipse cx="0" cy="0" rx="40" ry="30" fill="#FF6B7A"/>
+    
+    <!-- Cabeça/topo -->
+    <circle cx="-5" cy="-20" r="22" fill="#FF6B7A"/>
+    
+    <!-- Crista (penas no topo) -->
+    <path d="M -15 -35 L -12 -45 L -8 -35 L -4 -42 L 0 -35 L 4 -40 L 8 -35" 
+          fill="#E63946" stroke="none"/>
+    
+    <!-- Detalhes de penas no corpo -->
+    <g opacity="0.3" stroke="#C03744" stroke-width="1.5" fill="none">
+      <path d="M -15 -5 Q -12 -3 -15 0"/>
+      <path d="M -10 -5 Q -7 -3 -10 0"/>
+      <path d="M -5 -5 Q -2 -3 -5 0"/>
+      <path d="M 0 -5 Q 3 -3 0 0"/>
+      <path d="M 5 -5 Q 8 -3 5 0"/>
+      <path d="M 10 -5 Q 13 -3 10 0"/>
+      
+      <path d="M -15 5 Q -12 7 -15 10"/>
+      <path d="M -10 5 Q -7 7 -10 10"/>
+      <path d="M -5 5 Q -2 7 -5 10"/>
+      <path d="M 0 5 Q 3 7 0 10"/>
+      <path d="M 5 5 Q 8 7 5 10"/>
+    </g>
+    
+    <!-- Asa -->
+    <ellipse cx="-35" cy="5" rx="25" ry="15" fill="#FF8A95" transform="rotate(-30 -35 5)"/>
+    <g stroke="#C03744" stroke-width="1.2" fill="none" opacity="0.4">
+      <path d="M -45 0 Q -42 5 -40 10"/>
+      <path d="M -42 2 Q -39 7 -37 12"/>
+      <path d="M -39 4 Q -36 9 -34 14"/>
+    </g>
+    
+    <!-- Olho -->
+    <circle cx="5" cy="-22" r="7" fill="#F4E8C1"/>
+    <circle cx="5" cy="-22" r="5" fill="#2C2C2C"/>
+    <circle cx="6" cy="-23" r="2" fill="#FFFFFF"/>
+    
+    <!-- Cílios -->
+    <g stroke="#2C2C2C" stroke-width="1" stroke-linecap="round">
+      <line x1="10" y1="-27" x2="13" y2="-28"/>
+      <line x1="11" y1="-26" x2="14" y2="-26"/>
+      <line x1="11" y1="-24" x2="14" y2="-24"/>
+    </g>
+    
+    <!-- Bico -->
+    <path d="M 18 -20 L 28 -22 L 18 -24 Z" fill="#FFD166"/>
+    
+    <!-- Carta no bico -->
+    <g transform="translate(28, -22) rotate(-5)">
+      <!-- Envelope -->
+      <rect x="0" y="-12" width="35" height="24" rx="1" fill="#FFB5BA" stroke="#8B4A4F" stroke-width="1.5" stroke-dasharray="2,2"/>
+      
+      <!-- Flap -->
+      <path d="M 0 -12 L 17.5 0 L 35 -12" fill="none" stroke="#8B4A4F" stroke-width="1.5" stroke-dasharray="2,2"/>
+      <path d="M 0 -12 L 17.5 0 L 35 -12 Z" fill="#E89BA3" opacity="0.7"/>
+      
+      <!-- Coração -->
+      <g transform="translate(25, 2)">
+        <path d="M 0 -2 C -1 -4 -3 -4 -4 -2 C -5 0 -3 2 0 4 C 3 2 5 0 4 -2 C 3 -4 1 -4 0 -2 Z" 
+              fill="#E63946"/>
+      </g>
+      
+      <!-- Linhas -->
+      <line x1="3" y1="2" x2="18" y2="2" stroke="#8B4A4F" stroke-width="0.8"/>
+      <line x1="3" y1="5" x2="15" y2="5" stroke="#8B4A4F" stroke-width="0.8"/>
+      <line x1="3" y1="8" x2="12" y2="8" stroke="#8B4A4F" stroke-width="0.8"/>
+    </g>
+    
+    <!-- Pernas -->
+    <line x1="-8" y1="28" x2="-10" y2="42" stroke="#2C2C2C" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="8" y1="28" x2="10" y2="42" stroke="#2C2C2C" stroke-width="2.5" stroke-linecap="round"/>
+    
+    <!-- Pés -->
+    <g stroke="#2C2C2C" stroke-width="2" stroke-linecap="round">
+      <line x1="-10" y1="42" x2="-15" y2="44"/>
+      <line x1="-10" y1="42" x2="-10" y2="45"/>
+      <line x1="-10" y1="42" x2="-5" y2="44"/>
+      
+      <line x1="10" y1="42" x2="5" y2="44"/>
+      <line x1="10" y1="42" x2="10" y2="45"/>
+      <line x1="10" y1="42" x2="15" y2="44"/>
+    </g>
+  </g>
+</svg>
