@@ -8,10 +8,10 @@ import { useNavigate } from "react-router-dom";
 export default function MainPage() {
   const navigate = useNavigate();
 
-const calendar = import.meta.env.VITE_CALENDAR_INFO
-const mapAddress = import.meta.env.VITE_MAP_INFO
-const contactChatJose = import.meta.env.VITE_JOSE_CONTACT
-const contactChatInes = import.meta.env.VITE_INES_CONTACT
+const calendar = "https://calendar.google.com/calendar/u/0/r/day/2026/7/11?tab=mc&date=20081101";
+const mapAddress = "https://maps.app.goo.gl/uyJFurUmVWxohYU67";
+const contactChatJose = "https://wa.me/351911527645";
+const contactChatInes = "https://wa.me/351939504513";
 
   return (
     <>
